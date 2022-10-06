@@ -20,6 +20,12 @@ console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 
 // Your code here
 
+let arrowMyMap = (arr, cb) => {
+  let empty = [];
+  arr.forEach(ele => empty.push(cb(ele)))
+  return empty
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
