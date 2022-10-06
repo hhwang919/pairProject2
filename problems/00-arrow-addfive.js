@@ -16,6 +16,12 @@ let result3 = addFive(37); // returns 42
 ***********************************************************************/
 
 // Your code here
+let addFive = num => num + 5;
+
+
+let result1 = console.log(addFive(0)); // returns 5
+let result2 = console.log(addFive(10)); // returns 15
+let result3 = console.log(addFive(37)); // returns 42
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
