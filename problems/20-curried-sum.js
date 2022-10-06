@@ -45,6 +45,11 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 
 // Your code here
 
+let curriedSum = function (nums){
+
+let numbers = [];
+const _curriedSum 
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

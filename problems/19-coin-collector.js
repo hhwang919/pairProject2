@@ -27,6 +27,25 @@ Example 3:
 
 // Your code here
 
+let coinCollector = function (numCoins){
+  let empty = [];
+  const count = (num) => {
+    empty.push(num)
+    //console.log(num)
+
+    if (empty.length >= numCoins){
+      return empty
+    } else {
+      return count
+    }
+  }
+  return count
+}
+
+let threeCoins = coinCollector(3); // returns a function
+  threeCoins(25); // returns a function
+  threeCoins(5); // returns a function
+  console.log(threeCoins(10)); // prints [ 25, 5, 10 ]
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
