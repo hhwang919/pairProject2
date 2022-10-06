@@ -23,6 +23,27 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 ***********************************************************************/
 
 // Your code here
+/*let lazyAdder = function (firstNum){
+
+    return function (secondNum){
+      return function (thirdNum){
+        return firstNum + secondNum + thirdNum
+      }
+    }
+}
+*/
+let lazyAdderArrow = (firstNum) => {
+  return (secondNum) => {
+    return (thirdNum) => {
+      return firstNum + secondNum + thirdNum
+    }
+  }
+}
+
+let func1 = lazyAdderArrow(10);
+let func2 = func1(20);
+let total = func2(3);
+console.log(total); // prints 33
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

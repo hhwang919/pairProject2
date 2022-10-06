@@ -30,6 +30,27 @@ Example 4:
 
 // Your code here
 
+let countDownTimer = function(num){
+
+  if(num === 0){
+    return "Happy New Year!"
+  }
+  const count = () => {
+    num -= 1;
+    console.log(num)
+    if (num <= 0){
+      return "Happy New Year!"
+    } else{
+      return count
+    }
+  }
+  return count
+}
+
+let threeDays = countDownTimer(3); // returns a function
+  console.log(threeDays()); // returns a function
+  console.log(threeDays()); // returns a function
+  console.log(threeDays()); // prints "Happy New Year!"
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

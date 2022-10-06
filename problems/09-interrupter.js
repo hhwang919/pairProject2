@@ -13,10 +13,31 @@ Invoking the interrupter function again:
 let rudePerson2 = interrupter("yo"); // => returns a function
 console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 
-
+//
 ***********************************************************************/
 
 // Your code here
+let interrupter = function (interruptingWord){
+  return function (word){
+    let words = word.split(" ")
+    let sentence = "";
+    for(let i = 0; i < words.length; i++){
+      let el = words[i]
+
+      if(i === words.length - 1){
+        sentence += el
+        console.log(sentence)
+      } else {
+        sentence += el + " " + interruptingWord + " "
+      }
+    }
+    return sentence
+  }
+}
+
+let rudePerson = interrupter("what"); // => returns a function
+console.log(rudePerson("how are you")); // prints "how what are what you"
+console.log(rudePerson("I like pie")); // prints "I what like what pie"
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
